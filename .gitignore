@@ -1,3 +1,4 @@
 .*.swp
 tags
 target
+crates/modulators/Cargo.lock
