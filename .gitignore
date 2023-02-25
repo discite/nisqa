@@ -1,2 +1,4 @@
-/target
-/Cargo.lock
+.*.swp
+tags
+target
+modulators/Cargo.lock

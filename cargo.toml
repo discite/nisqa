@@ -1,0 +1,21 @@
+[package]
+name = "nisqa"
+version = "0.0.1" #:version
+authors = ["Ioannes Carolus Fridericus <desarrollo.tyi9x@8alias.com>"]
+description = """
+nisqa is looking to be a view of how i will make a modulator and demodulation
+system that looks to be simple, and efficient, so is able to introduce and
+prototype communication systems in the theoretical point of view, a layer 1
+in the OSI model for the computer folks.
+eventually to grow it more and more to become unmaintainable while i practice rust.
+"""
+keywords = ["niqa", "communication", "modulator", "prototype"]
+license = "Apache2 OR MIT"
+edition = "2021"
+
+[[bin]]
+path = "crates/core/main.rs"
+name = "nisqa"
+
+[workspace]
+members = ["crates/modulators"]
