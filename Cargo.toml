@@ -18,4 +18,12 @@ path = "crates/core/main.rs"
 name = "nisqa"
 
 [workspace]
-members = ["crates/modulators"]
+members = [
+  "crates/modulators",
+  "crates/digitalization",
+]
+
+[dependencies]
+digitalization = { version = "0.1.0", path="crates/digitalization" }
+tui = { version = "0.19", default-features = false, features = ['termion'] }
+termion = "2.0.1"

@@ -1,0 +1,33 @@
+[package]
+name = "digitalization-fuzz"
+version = "0.0.0"
+publish = false
+edition = "2021"
+
+[package.metadata]
+cargo-fuzz = true
+
+[dependencies]
+libfuzzer-sys = "0.4"
+
+[dependencies.digitalization]
+path = ".."
+
+# Prevent this from interfering with workspaces
+[workspace]
+members = ["."]
+
+[profile.release]
+debug = 1
+
+[[bin]]
+name = "fuzz_adc"
+path = "fuzz_targets/fuzz_adc.rs"
+test = false
+doc = false
+
+[[bin]]
+name = "to_binary"
+path = "fuzz_targets/to_binary.rs"
+test = false
+doc = false
