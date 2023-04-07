@@ -31,3 +31,9 @@ name = "to_binary"
 path = "fuzz_targets/to_binary.rs"
 test = false
 doc = false
+
+[[bin]]
+name = "to_decimal"
+path = "fuzz_targets/to_decimal.rs"
+test = false
+doc = false
