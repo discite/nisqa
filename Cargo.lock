@@ -3,6 +3,10 @@
 version = 3
 
 [[package]]
+name = "codification"
+version = "0.1.0"
+
+[[package]]
 name = "digitalization"
 version = "0.1.0"
 
@@ -14,5 +18,6 @@ version = "0.1.0"
 name = "nisqa"
 version = "0.0.1"
 dependencies = [
+ "codification",
  "digitalization",
 ]
