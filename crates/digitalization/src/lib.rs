@@ -1,6 +1,6 @@
 #![no_std]
 
-pub fn to_binary(mut n: u32) -> [u8; 32] {
+pub fn u32_to_binary(mut n: u32) -> [u8; 32] {
     let mut binary = [0; 32];
     let mut i = 31;
     while n > 0 && i > 0 {
@@ -18,7 +18,7 @@ pub fn to_binary(mut n: u32) -> [u8; 32] {
 
 
 
-pub fn to_decimal(binary: [u8; 32]) -> Option<u32> {
+pub fn binary_to_u32(binary: [u8; 32]) -> Option<u32> {
     let mut decimal: u32 = 0;
     for digit in binary.iter() {
         if *digit > 1 {

@@ -1,5 +1,5 @@
 use std::io::{self, Read};
-use digitalization::to_binary;
+use digitalization::u32_to_binary;
 
 fn main() {
     let mut input = String::new();
@@ -7,7 +7,7 @@ fn main() {
 
     let n: u32 = input.trim().parse().expect("Failed to parse input");
 
-    let binary = to_binary(n);
+    let binary = u32_to_binary(n);
 
     for digit in binary.iter() {
         print!("{}", digit);
